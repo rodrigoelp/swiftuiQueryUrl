@@ -58,6 +58,9 @@ class AppState: ObservableObject {
                 // may have been generated along the way. In this case, I am just ignoring any error.
                 Just("There was an error... you should check it out \n\(String(describing: error))")
             })
+            // given the query will be performed on the background thread,
+            // we need to issue it on the main thread to avoid issues.
+            .receive(on: RunLoop.main)
             // pushing the new published values into the result auto publisher.
             .assign(to: \AppState.result, on: self)
     }
