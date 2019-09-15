@@ -9,8 +9,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var state: AppState
+
     var body: some View {
-        Text("Hello World")
+        VStack(spacing: 8) {
+            Text("I know... \nthis is the most beautiful user interface you have ever seen.")
+                .font(.headline)
+                .multilineTextAlignment(.center)
+                .lineLimit(nil)
+            TextField("Write down anything here.", text: $state.query)
+            Text("Here is the result:")
+                .font(.subheadline)
+            Text(state.result)
+        }.padding()
     }
 }
 

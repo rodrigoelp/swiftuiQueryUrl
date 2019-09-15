@@ -13,6 +13,7 @@
 		DC5E7B40232E08C4006D3FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5E7B3F232E08C4006D3FEA /* Assets.xcassets */; };
 		DC5E7B43232E08C4006D3FEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5E7B42232E08C4006D3FEA /* Preview Assets.xcassets */; };
 		DC5E7B46232E08C4006D3FEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5E7B44232E08C4006D3FEA /* LaunchScreen.storyboard */; };
+		DC5E7B4F232E0A1C006D3FEA /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5E7B4E232E0A1C006D3FEA /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		DC5E7B42232E08C4006D3FEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DC5E7B45232E08C4006D3FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC5E7B47232E08C4006D3FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC5E7B4D232E08D6006D3FEA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DC5E7B4E232E0A1C006D3FEA /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		DC5E7B50232E0AA2006D3FEA /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 		DC5E7B2D232E08C2006D3FEA = {
 			isa = PBXGroup;
 			children = (
+				DC5E7B50232E0AA2006D3FEA /* LICENSE */,
+				DC5E7B4D232E08D6006D3FEA /* README.md */,
 				DC5E7B38232E08C2006D3FEA /* swiftUIQuery */,
 				DC5E7B37232E08C2006D3FEA /* Products */,
 			);
@@ -56,6 +62,7 @@
 		DC5E7B38232E08C2006D3FEA /* swiftUIQuery */ = {
 			isa = PBXGroup;
 			children = (
+				DC5E7B4E232E0A1C006D3FEA /* AppState.swift */,
 				DC5E7B39232E08C2006D3FEA /* AppDelegate.swift */,
 				DC5E7B3B232E08C2006D3FEA /* SceneDelegate.swift */,
 				DC5E7B3D232E08C2006D3FEA /* ContentView.swift */,
@@ -149,6 +156,7 @@
 				DC5E7B3A232E08C2006D3FEA /* AppDelegate.swift in Sources */,
 				DC5E7B3C232E08C2006D3FEA /* SceneDelegate.swift in Sources */,
 				DC5E7B3E232E08C2006D3FEA /* ContentView.swift in Sources */,
+				DC5E7B4F232E0A1C006D3FEA /* AppState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
