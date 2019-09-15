@@ -12,16 +12,23 @@ struct ContentView: View {
     @EnvironmentObject var state: AppState
 
     var body: some View {
-        VStack(spacing: 8) {
-            Text("I know... \nthis is the most beautiful user interface you have ever seen.")
-                .font(.headline)
-                .multilineTextAlignment(.center)
-                .lineLimit(nil)
+        VStack(alignment: .leading, spacing: 8) {
+            Text("I know!")
+                .font(.title)
+
+            Text("This is the most beautiful user interface you have ever seen.")
+                .font(.system(size: 20))
+                .lineLimit(3)
+
             TextField("Write down anything here.", text: $state.query)
+
             Text("Here is the result:")
                 .font(.subheadline)
+
             Text(state.result)
-        }.padding()
+                .lineLimit(10)
+
+        }.padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
     }
 }
 
